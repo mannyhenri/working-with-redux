@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import App from './App';
 import configureStore from './store/store';
 import { getInitialNotes } from './store/actions';
+import registerServiceWorker from './registerServiceWorker';
 
 const store = configureStore();
 store.dispatch(getInitialNotes());
@@ -13,3 +14,4 @@ ReactDOM.render(
     <App />
   </Provider>
   , document.getElementById('root'));
+registerServiceWorker();

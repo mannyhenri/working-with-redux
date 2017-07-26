@@ -3,15 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "react-scripts": "1.0.10"
+    "react-scripts": "1.0.7"
   },
   "dependencies": {
+    "firebase": "^4.1.2",
+    "lodash": "^4.17.4",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.5",
-    "redux": "^3.7.2",
-    "redux-immutable-state-invariant": "^2.0.0",
-    "redux-thunk": "^2.2.0"
+    "redux": "^3.7.1",
+    "yarn": "^0.27.5"
   },
   "scripts": {
     "start": "react-scripts start",

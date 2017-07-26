@@ -1,19 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Single from './Single';
 
-class Grid extends React.Component {
+export default class Grid extends Component {
   removeNote(id) {
     this.props.removeNote(id);
   }
-  renderItems() {
-    return this.props.notes.map(item =>
+  renderItems(){
+    return this.props.notes.map(item => 
       <Single
-        key={item.id}
-        note={item}
-        removeNote={this.removeNote.bind(this)}
+          key={item.id}
+          note={item}
+          removeNote={this.removeNote.bind(this)}
       />
-  );
-
+      );
   }
   render() {
     return (
@@ -25,5 +24,3 @@ class Grid extends React.Component {
     );
   }
 }
-
-export default Grid;
